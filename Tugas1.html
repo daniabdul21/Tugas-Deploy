@@ -1,0 +1,215 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>Tugas Html 2</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootcamp</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Tentang Aku</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Data Diri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pendidikan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Prestasi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="gambar1.jpeg" class="d-block w-100"  alt="gambar">
+        </div>
+        <div class="carousel-item">
+          <img src="gambar2.jpeg" class="d-block w-100"  alt="gambar">
+        </div>
+        <div class="carousel-item">
+          <img src="gambar3.jpeg" class="d-block w-100"  alt="gambar">
+        </div>
+        </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="text-center">
+      <img
+        src="gambar.jpg"
+        class="rounded mx-auto d-block my-3"
+        alt="gambar"
+        width="150px"
+      />
+    </div>
+    <div class="container">
+        <div class="card">
+      <div class="row">
+        <div class="col-12">
+            <div class="card-body" onclick="myFunction()">
+              <h5 class="card-title">Tentang Aku</h5>
+              <p class="card-text">
+                Hi, perkenalkan saya Hamdani, saya usia 19 tahun, saya baru bergelut dengan dunia programmer baru 5 bulan<br><br>
+                hobi saya membaca al-quran, mempelajari lebih dalam ilmu baru, dan memancing, saya tinggal di bandung lebih<br><br>
+                tepatnya saya tinggal jl babakan ciparay
+              </p>
+              <button type="button" class="btn btn-primary btn-sm">
+                Selengkapnya
+              </button>
+              <button type="button" class="btn btn-success btn-sm">
+                Contact
+              </button>
+              <button onclick="myFunction1()" class="btn btn-secondary btn-sm">Rahasia Saya</button>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-secondary btn-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Cek Modal
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Keingininan saya
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      saya adalah seorang developer muda, yang akan merubah
+                      bangsa
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <h4 class="card-tittle">Data Diri</h4>
+              <table class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Data</th>
+                    <th scope="col">Nilai</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Nama Lengkap</th>
+                    <td>Hamdani</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Tanggal Lahir</th>
+                    <td>14 april 2002</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Asal</th>
+                    <td>Bandung</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Alamat</th>
+                    <td>Jln, babakan ciparay</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Email</th>
+                    <td>dani.abud21@gmail.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Pendidikan</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item">SD Saluyu</li>
+                    <li class="list-group-item">SMP Pahlawan Toha</li>
+                    <li class="list-group-item">SMK Pasundan 2 Bandung</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="function.js">
+      </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      
+    </script>
+  </body>
+</html>
